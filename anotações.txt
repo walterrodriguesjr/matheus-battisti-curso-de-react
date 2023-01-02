@@ -1,0 +1,44 @@
+https://www.youtube.com/watch?v=FXqX7oof0I4&list=PLnDvRpP8BneyVA0SZ2okm-QBojomniQVO
+
+1-Introdução - #01
+-apresentação da proposta do curso.
+-instalar o node JS (já instalado)
+-é uma biblioteca JS para criação de interface 
+-usada para aplicações SPA 
+-baseado em componentes 
+-usa JSX para renderizar HTML 
+
+2-Instalando o React (create-react-app)
+-o nome da ferramenta de instalação é: Create React App 
+-necessário também o node e o npm instalados
+-npx create-react-app meu-projeto
+-npm start 
+-http://172.28.224.1:3000
+
+3-Entendendo o JSX
+-o JSX é como um HTML, porém dentro do código JavaScript(como uma template engine)
+-é a principal maneira de escrever HTML com o React
+-é possível também executar funções em JSX 
+-variáveis de JavaScript, podem ser chamadas no HTML inserindo a variável entre chaves{} 
+-em react 'class' é uma palavra reservada, usa-se o 'className'
+
+4-Criando componentes no React
+-criar componentes, permite dividir a aplicação em aprtes 
+-os componentes renderizam JSX, assim como App.js (que é um componente)
+-é possivel compartilhar os componentes entre si, importando ou exportando 
+-geralmente ficam em pasta chamada components, dentro de src 
+
+5-Trabalhando com props
+-as props(propriedades), são valores passados para componentes 
+-possibilita o uso dinâmico, ou seja, mudando a execução por causa do valor da prop 
+-o valor é passado como um atributo na chamada do componente, e precisa ser resgatado dentro de uma 
+    propriedade/argumento chamada props na função de definição do componente 
+-as props são somente de leitura 
+-os propos são os parametros das funções dos componentes, para serem definidas dinamicamente onde o 
+    componente for importado para uso 
+
+6-Inserindo CSS no React (CSS modules)
+-o CSS pode ser adicionado de forma global na aplicação, por meio do arquivo index.css, por exemplo 
+-porém, é possível estilizar a nível de componente também, neste caso, não global a todos 
+-utilizamos o CSS modules para isso 
+-basta criar um arquivo como: Componente.module.css, e chamar este CSS no componente 
