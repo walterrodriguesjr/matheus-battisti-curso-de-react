@@ -42,3 +42,72 @@ https://www.youtube.com/watch?v=FXqX7oof0I4&list=PLnDvRpP8BneyVA0SZ2okm-QBojomni
 -porém, é possível estilizar a nível de componente também, neste caso, não global a todos 
 -utilizamos o CSS modules para isso 
 -basta criar um arquivo como: Componente.module.css, e chamar este CSS no componente 
+
+7-Utilizando React fragments
+-os react fragments permitem a criação de um componente sem elemento pai 
+-é quando o conteúdo não é envolvido por uma <div>, e sim, por tags vazias: <></>
+
+8-Avançando em props
+-é possível definir tipos para os props(string, number etc..), realizando uma espécie de validação 
+-é definido em um objeto chamado propTypes no próprio componente 
+-exeste também a possibilidade de definir um valor padrão, usando o objeto defaultProps 
+-quando for tipificar o componente com props, deve se importar nele o propTypes
+    import PropTypes from "prop-types";
+
+9-Eventos no React (onClick, onChange e onSubmit)
+-são os mesmo eventode DOM 
+-é atrelado a uma tag que irá executa-la 
+-geralmente um método é atribuído ao evento, criado no componente
+-execução:
+    no componente de Evento, define-se a função e o que ela vai fazer ao clicar
+    no return do componente, define no HTML como vai ser, ta tag <button> insere o onClick e o nome do método 
+-no componente FORM a lógica é semelhante 
+
+10-useState na prática 
+-useState é um hook do react 
+-ele possibilita manusear o estado de um componente
+-este funciona muito bem com eventos 
+-possibilita atrelar um evento a mundança de  state 
+-useState é usado, quando trabalhamos com formulários, para pegar o valor de inputs 
+-no componente que for usar o useState, deve se primeiramente, importa-lo da própria biblioteca do react 
+    import { useState } from "react"; 
+
+11-Passar eventos por props
+-um componente flho pode ativar o método do seu ancestral 
+
+12-Renderização condicional (if)
+-a condicional pode ser inserida (renderizada) dentro do HTML entre {} renderizando algo, por exemplo,
+     caso a condição seja atendida 
+
+13-enderização de listas
+-para renderizar uma lista, precisa-se de um array 
+-posteriormente, usa a função map() para percorrer cada um dos itens 
+- em App.js, é chamado o componente que foi importado OutraLista, e em seguida o prop dele que 
+    é itens, este chama uma função de map, que recebe como parâmetro o array criado 
+
+14-State Lift
+-State Lift é uma técnica usada para compartilhar o state 
+-é normal vários componentes dependerem do mesmo estado 
+-neste caso, eleva-se o nível do mesmo a um componente pai 
+-centraliza o state no pai, é definimos quem usa e quem define (setState);
+
+15-implementando o React Router 
+-é um pacote para mudança de URLs da aplicação 
+-permite acessar outras views, sem dar refresh na página, trocando apenas uma parte do layout da aplicação 
+-necessário instalar o pacote no projeto, alterando também, como o APP é estruturado 
+-npm install react-router-dom
+-alteração pq na nova versão do react, o Switch que vem com Router, não se usa mais, usando o Routes no lugar do Switch 
+
+16-React Icons
+-é um pacote de icones externo do react, dentro do site, https://react-icons.github.io/react-icons/ 
+    pode se escolher a bibliote que será instalada, Game icons, Font Awesome etc 
+-precisa ser adicionado via npm 
+    npm install react-icons --save
+-no mesmo site, após instalar, o link de uso das diversas bibliotecas é o mesmo, mudando apenas o final depois 
+    da barra, como no exemplo abaixo, que irá usar o font awesome 
+    import { IconName } from "react-icons/fa";
+-cada icone, precisa ser importado no componente que será usado, podendo ser chamado depois no HTML 
+
+17-Apresentação do Projeto do Curso 
+-apresentação da aplicação que será feita 
+
