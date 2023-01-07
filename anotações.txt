@@ -108,6 +108,7 @@ https://www.youtube.com/watch?v=FXqX7oof0I4&list=PLnDvRpP8BneyVA0SZ2okm-QBojomni
     import { IconName } from "react-icons/fa";
 -cada icone, precisa ser importado no componente que será usado, podendo ser chamado depois no HTML 
 
-17-Apresentação do Projeto do Curso 
--apresentação da aplicação que será feita 
+
+FIM PARTE TEÓRICA
+
 
